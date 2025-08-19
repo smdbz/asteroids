@@ -23,7 +23,7 @@ class Player(CircleShape):
         pygame.draw.polygon(screen, color="white", points=self.triangle(), width=2)
 
     def rotate(self, dt):
-        self.rotation =+ PLAYER_TURN_SPEED*dt
+        self.rotation += PLAYER_TURN_SPEED*dt
 
     def move(self, dt):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
